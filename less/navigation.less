@@ -1,37 +1,36 @@
 // Navigation code here
 
-
 header {
     margin-top: 20px; 
     width: 100%;
-    // display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @media @phone {
         flex-wrap: wrap;
         justify-content: center;
-    
-        .logo {
-            width: 100%;
-            text-align: center;
-        }
+    }
+
+    h1 {
+        font-size: 60px;
     }
     
 }
 
+
+
 header nav {
-    margin-top: 10px; 
+    margin-top: 20px; 
     margin-bottom: 10px;
-    width: 100%;
-    // justify-content:flex-start;
+    width: 80%;
     justify-content: space-between;
     display: flex;
-    font-size: 20px;
-    // text-align: center;
+    font-size: 15px;
     text-align: center;
 
     @media @phone {
         width: 100%;
-        // justify-content: center;
 
     }
 }
@@ -51,10 +50,4 @@ header nav a {
 header nav a:hover {
     text-decoration: underline;
     color: black;
-}
-
-.logo {
-    margin: 20px;
-    font-size: 40px; 
-    text-align: center;
 }
